@@ -1,6 +1,8 @@
 package qa.vitalii.allure;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selectors.withText;
@@ -13,6 +15,11 @@ public class SelenideTest {
 
     @Test
     public void testGithub() {
+
+        //Listener - это возможность узнать что происходит внутри библиотеки
+        //чудо строчка которая сама создаст степы, сохранит скриншот упавшего шага, добавит логов
+        SelenideLogger.addListener("allure", new AllureSelenide());
+
         open("https://github.com");
 
         $("[data-test-selector=nav-search-input]").click();
