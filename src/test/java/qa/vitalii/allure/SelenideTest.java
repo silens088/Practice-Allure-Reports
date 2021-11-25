@@ -15,7 +15,6 @@ public class SelenideTest {
 
     @Test
     public void testGithub() {
-
         //Listener - это возможность узнать что происходит внутри библиотеки
         //чудо строчка которая сама создаст степы, сохранит скриншот упавшего шага, добавит логов
         SelenideLogger.addListener("allure", new AllureSelenide());
