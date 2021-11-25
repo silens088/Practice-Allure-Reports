@@ -31,4 +31,5 @@ public class SelenideTest {
         $(withText("#68")).should(Condition.visible);
     }
 }
-//коммент 2 в мастер
+//дел 1
+//новая ветка 2
