@@ -31,7 +31,6 @@ public class SelenideTest {
         $(withText("#68")).should(Condition.visible);
     }
 }
-//дел 1
-//новая ветка 2
+
 //новая ветка 3
 //новая ветка 4
