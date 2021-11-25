@@ -17,7 +17,6 @@ public class StepsLambdaTest {
 
     @Test
     public void testGithub() {
-
         step("Открываем главную страницу гитхаб", () -> {
             open(URL);
         });
@@ -35,6 +34,5 @@ public class StepsLambdaTest {
         step("Check what were Issue with number 68", () -> {
             $(withText("#68")).should(Condition.visible);
         });
-
     }
 }

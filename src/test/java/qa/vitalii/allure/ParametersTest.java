@@ -12,7 +12,6 @@ public class ParametersTest { //про параметризованные тес
     @ValueSource(strings = {"Тольятти", "Москва"})
     public void testLambda(String city) {
         Allure.parameter("Город", city);
-
     }
 }
 
