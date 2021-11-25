@@ -31,3 +31,4 @@ public class SelenideTest {
         $(withText("#68")).should(Condition.visible);
     }
 }
+//добавляю новое изменение в новую ветку и коммичу
