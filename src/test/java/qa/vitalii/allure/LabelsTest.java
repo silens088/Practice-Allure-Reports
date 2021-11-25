@@ -30,5 +30,4 @@ public class LabelsTest {
         Allure.label("severity", "BLOCKER");
         Allure.link("GitHub", "https://github.com");
     }
-
 }
