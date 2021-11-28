@@ -11,7 +11,7 @@ public class LabelsTest {
     @Feature("Авторизация")
     @Severity(SeverityLevel.BLOCKER)
     @Story("Авторизация через Email")
-    @DisplayName("Тест для проверки Гибхаб")
+    @DisplayName("Test for check Github")
     @Link(name = "GitHub", url = "https://github.com/")
     public void testLambda() {
 
@@ -22,7 +22,7 @@ public class LabelsTest {
     @Test
     public void testAnnotated() {
         Allure.getLifecycle().updateTestCase(testCase -> {
-            testCase.setName("Тест для проверки Google");
+            testCase.setName("Test for check Google");
         });
         Allure.label("owner", "vvelichko");
         Allure.feature("Авторизация");

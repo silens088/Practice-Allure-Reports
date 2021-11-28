@@ -13,7 +13,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
-public class AttachmentTest {
+public class AttachmentScreenshot {
 
     private static final String REPOSITORY = "eroshenkoam/allure-example";
     private static final String URL_GITHUB = "https://github.com";
@@ -26,6 +26,7 @@ public class AttachmentTest {
 
         step("Открываем главную страницу гитхаб", () -> {
             open("https://github.com");
+
         });
         step("Ищем репозиторий " + REPOSITORY, () -> {
             $("[data-test-selector=nav-search-input]").click();
