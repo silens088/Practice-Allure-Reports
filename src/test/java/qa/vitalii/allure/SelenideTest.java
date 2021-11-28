@@ -31,5 +31,3 @@ public class SelenideTest {
         $(withText("#68")).should(Condition.visible);
     }
 }
-
-
